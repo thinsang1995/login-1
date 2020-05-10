@@ -8,14 +8,31 @@
     <title>Login Form</title>
   </head>
   <body>
+    <div class="container">
       <div class="login-container">
         <h1>Login</h1>
         <img src="avata.svg">
         <form class="login">
           <input id="user" type="text" placeholder="Username">
-          <input id="pass" type="password" placeholder="Password"><br>
+          <input id="password" type="password" placeholder="Password"><br>
           <button id="login" type="button" onclick="toLogin()">Login</button>
+          <button id="register" type="button" onclick="toRegister()">Register</button>
         </form>
-      </div>  
+      </div>
+      <div class="login-success">
+        <h1>Login Successful</h1>
+        <button id="logout" onclick="toLogout()">Logout</button>
+      </div>
+      <div class="register-container">
+        <h1>Sign Up</h1>
+        <form class="register">
+          <input id="sign-user" type="text" placeholder="Username">
+          <input id="sign-password" type="password" placeholder="Password">
+          <input id="sign-email" type="email" placeholder="Email"><br>
+          <button id="create" type="button" onclick="toCreate()">Create</button>
+          <button id="cancel" type="button" onclick="toCancel()">Cancel</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
