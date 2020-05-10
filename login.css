@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #5a5858;
+}
+
+h1 {
+    color: white;
+    margin-top: -5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+img {
+    width: 100px;
+}
+
+input {
+    display: block;
+    width: 220px;
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 16px;
+    border: 2px solid #00cc00;
+    border-radius: 24px;
+    background: none;
+    color: white;
+    transition: .25s;
+}
+
+input:hover {
+    width: 250px;
+    border: 2px solid #00ffff;
+    border-radius: 24px;
+    outline: none;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 90px;
+    padding: 15px;
+    margin: -10px auto;
+    font-size: 17px;
+    border: 2px solid #00cc00;
+    border-radius: 24px;
+    background: none;
+    color: white;
+    transition: .25s;
+}
+
+button:hover {
+    background: #00cc00;
+    color: black;
+}
+
+.login-container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #302e2e;
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Change input auto fill below this line */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-animation: autofill 0s forwards;
+    animation: autofill 0s forwards;
+}
+
+@keyframes autofill {
+    100% {
+        background: transparent;
+        color: white;
+    }
+}
+
+@-webkit-keyframes autofill {
+    100% {
+        background: transparent;
+        color: white;
+    }
+}
+/* Change input auto fill above this line */
